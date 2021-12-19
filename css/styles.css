@@ -1,0 +1,293 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'roboto', sans-serif;
+}
+
+body{
+  background: #ececec;
+}
+.header-wraper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #000000;
+  box-shadow: 0 4px 25px -22px black;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pinky{
+  margin-left:20px;
+  color: #F0A500;
+  font-size: 24px;
+}
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+input.src{
+  padding: 9px 10px 9px 32px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 15px;
+  color: #000000;
+  border: 3px solid #F0A500;
+  background: #fff url(icon.png) no-repeat 9px center;
+  width: 60px;
+  transition: all .5s;
+
+}
+
+input.src:hover{
+width: 180px;
+background-color: #fff;
+border-color: #fff;
+box-shadow: 0 0 5px #fff;
+}
+/*portada*/
+
+.container-cover{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin-top: 80px;
+  background-image: url(../img/portada.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-cover::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 165, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* aside*/
+.aside {
+  width: 18%;
+  display: inline-block;
+  background: #ececec;
+  margin-bottom: 40px;
+  margin: auto;
+  padding: 10px;
+  float: right;
+  box-shadow: -4px 0px 25px -27px black;
+  border-radius: 50px;
+}
+
+h2{
+  padding: 20px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+ .aside aside{
+  width: 100%;
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  float: right;
+
+}
+
+.aside aside h3{
+  text-align: center;
+}
+
+.aside aside img{
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.aside aside p{
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aside aside a{
+  display: flex;
+  justify-content: center;
+}
+
+.aside aside a button{
+  text-decoration: none;
+  padding: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: rgba(255, 153, 0, 1);
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #ee8f00;
+  cursor: pointer;
+}
+
+.aside aside a button:hover{
+  text-decoration: none;
+  background-color: rgba(255, 153, 0, 0.8);
+}
+
+
+
+/*Aqui comienza los articulos*/
+
+Section{
+  max-width: 100%;
+  height: 100%;
+  background: #DBDBDB;
+  display: flex;
+  justify-content: center;
+}
+
+  .text-h2 {
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+.galeria{
+  max-width: 100%;
+  height: 100%;
+  margin: 2em;
+  list-style: none;
+  display: block;
+  justify-content: center;
+}
+
+.galeria li{
+  display: inline-block;
+  width: 576px;
+  background: #ececec;
+  margin: 5px;
+
+}
+
+.galeria img{
+  width: 200px;
+  height: 180px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.noticia{
+  margin: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.noticia:hover{
+  content:'';
+  background: rgba(219, 219, 219, 0.5);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+.noticia h3{
+  color: #000000;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.noticia figcaption{
+  color: #151515;
+  font-size: 18px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/** pie de pagina**/
+
+.container-footer{
+  width: 100%;
+  padding: 20px 0px;
+  background:  #000000;
+}
+
+.container-footer footer{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-footer footer .redes-footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer{
+  font-size: 20px;
+  margin: 20px;
+  background: #efefef;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: solid 4px #F0A500;
+  color: #F0A500;
+}
+
+.container-footer footer .redes-footer .fa-facebook:hover{
+  background: #3b5998;
+  color: #fff;
+}
+
+.container-footer footer .redes-footer .fa-instagram:hover{
+  background: linear-gradient(45DEG, #405DE6, #5851DB, #833AB4, #C13584, #E1306E, #FD1D1D);
+  color: #fff;
+}
+.container-footer footer .redes-footer .fa-twitter:hover{
+  background: #1DA1F2;
+  color: #fff;
+}
+
+.container-footer footer hr{
+  margin-top: 20px;
+  border: none;
+  height: 2px;
+  background: #F0A500;
+}
+
+.container-footer h4{
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+}
